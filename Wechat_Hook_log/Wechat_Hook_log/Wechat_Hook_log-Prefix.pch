@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Wechat_Hook_log' target in the 'Wechat_Hook_log' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

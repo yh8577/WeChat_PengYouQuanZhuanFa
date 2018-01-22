@@ -1,0 +1,365 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A63B13252009A8330047A60B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A63B13242009A8320047A60B /* UIKit.framework */; };
+		A63B1330200A86140047A60B /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A63B132F200A86140047A60B /* CoreMedia.framework */; };
+		A63BB15620085A1C0047A60B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A63BB15520085A1C0047A60B /* Foundation.framework */; };
+		A63BB16120085A1C0047A60B /* Wechat_Hook_log.mm in Sources */ = {isa = PBXBuildFile; fileRef = A63BB16020085A1C0047A60B /* Wechat_Hook_log.mm */; };
+		A63BB16C20085A300047A60B /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A63BB16B20085A300047A60B /* libsubstrate.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A63B13242009A8320047A60B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A63B132F200A86140047A60B /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		A63BB15220085A1C0047A60B /* Wechat_Hook_log.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Wechat_Hook_log.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		A63BB15520085A1C0047A60B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A63BB15A20085A1C0047A60B /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		A63BB15B20085A1C0047A60B /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		A63BB15D20085A1C0047A60B /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		A63BB15E20085A1C0047A60B /* Wechat_Hook_log-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wechat_Hook_log-Prefix.pch"; sourceTree = "<group>"; };
+		A63BB15F20085A1C0047A60B /* Wechat_Hook_log.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Wechat_Hook_log.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		A63BB16020085A1C0047A60B /* Wechat_Hook_log.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Wechat_Hook_log.mm; sourceTree = "<group>"; };
+		A63BB16520085A1C0047A60B /* Wechat_Hook_log.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Wechat_Hook_log.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/Wechat_Hook_log.plist; sourceTree = "<group>"; };
+		A63BB16B20085A300047A60B /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = "../../网易云学习资料/libsubstrate/libsubstrate.dylib"; sourceTree = "<group>"; };
+		A6E1A0E3200ED61A0097F12F /* wechatHook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wechatHook.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A63BB14E20085A1C0047A60B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A63B1330200A86140047A60B /* CoreMedia.framework in Frameworks */,
+				A63B13252009A8330047A60B /* UIKit.framework in Frameworks */,
+				A63BB16C20085A300047A60B /* libsubstrate.dylib in Frameworks */,
+				A63BB15620085A1C0047A60B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A63BB14720085A1C0047A60B = {
+			isa = PBXGroup;
+			children = (
+				A63BB15720085A1C0047A60B /* Wechat_Hook_log */,
+				A63BB15420085A1C0047A60B /* Frameworks */,
+				A63BB15320085A1C0047A60B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A63BB15320085A1C0047A60B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A63BB15220085A1C0047A60B /* Wechat_Hook_log.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A63BB15420085A1C0047A60B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A63B132F200A86140047A60B /* CoreMedia.framework */,
+				A63B13242009A8320047A60B /* UIKit.framework */,
+				A63BB16B20085A300047A60B /* libsubstrate.dylib */,
+				A63BB15520085A1C0047A60B /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A63BB15720085A1C0047A60B /* Wechat_Hook_log */ = {
+			isa = PBXGroup;
+			children = (
+				A6E1A0E3200ED61A0097F12F /* wechatHook.h */,
+				A63BB15F20085A1C0047A60B /* Wechat_Hook_log.xm */,
+				A63BB16020085A1C0047A60B /* Wechat_Hook_log.mm */,
+				A63BB15820085A1C0047A60B /* Package */,
+				A63BB15C20085A1C0047A60B /* Supporting Files */,
+			);
+			path = Wechat_Hook_log;
+			sourceTree = "<group>";
+		};
+		A63BB15820085A1C0047A60B /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				A63BB15920085A1C0047A60B /* DEBIAN */,
+				A63BB16220085A1C0047A60B /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		A63BB15920085A1C0047A60B /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				A63BB15A20085A1C0047A60B /* control.txt */,
+				A63BB15B20085A1C0047A60B /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		A63BB15C20085A1C0047A60B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A63BB15D20085A1C0047A60B /* PackageVersion.plist */,
+				A63BB15E20085A1C0047A60B /* Wechat_Hook_log-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A63BB16220085A1C0047A60B /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				A63BB16320085A1C0047A60B /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		A63BB16320085A1C0047A60B /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				A63BB16420085A1C0047A60B /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		A63BB16420085A1C0047A60B /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				A63BB16520085A1C0047A60B /* Wechat_Hook_log.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A63BB14F20085A1C0047A60B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A63BB15120085A1C0047A60B /* Wechat_Hook_log */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A63BB16820085A1C0047A60B /* Build configuration list for PBXNativeTarget "Wechat_Hook_log" */;
+			buildPhases = (
+				A63BB14C20085A1C0047A60B /* ShellScript */,
+				A63BB14D20085A1C0047A60B /* Sources */,
+				A63BB14E20085A1C0047A60B /* Frameworks */,
+				A63BB14F20085A1C0047A60B /* Headers */,
+				A63BB15020085A1C0047A60B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wechat_Hook_log;
+			productName = Wechat_Hook_log;
+			productReference = A63BB15220085A1C0047A60B /* Wechat_Hook_log.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A63BB14820085A1C0047A60B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				TargetAttributes = {
+					A63BB15120085A1C0047A60B = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = ZEGP83LMQ7;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A63BB14B20085A1C0047A60B /* Build configuration list for PBXProject "Wechat_Hook_log" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A63BB14720085A1C0047A60B;
+			productRefGroup = A63BB15320085A1C0047A60B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A63BB15120085A1C0047A60B /* Wechat_Hook_log */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A63BB14C20085A1C0047A60B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		A63BB15020085A1C0047A60B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A63BB14D20085A1C0047A60B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A63BB16120085A1C0047A60B /* Wechat_Hook_log.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A63BB16620085A1C0047A60B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		A63BB16720085A1C0047A60B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		A63BB16920085A1C0047A60B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = ZEGP83LMQ7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wechat_Hook_log/Wechat_Hook_log-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 192.168.31.98;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		A63BB16A20085A1C0047A60B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = ZEGP83LMQ7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wechat_Hook_log/Wechat_Hook_log-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 192.168.31.98;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A63BB14B20085A1C0047A60B /* Build configuration list for PBXProject "Wechat_Hook_log" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A63BB16620085A1C0047A60B /* Debug */,
+				A63BB16720085A1C0047A60B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A63BB16820085A1C0047A60B /* Build configuration list for PBXNativeTarget "Wechat_Hook_log" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A63BB16920085A1C0047A60B /* Debug */,
+				A63BB16A20085A1C0047A60B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A63BB14820085A1C0047A60B /* Project object */;
+}
